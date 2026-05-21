@@ -256,7 +256,8 @@ contract FORGE is ERC20, ERC20Burnable, ERC20Pausable, AccessControl, Reentrancy
     //  OVERRIDES REQUIRED BY SOLIDITY
     // =========================================================================
 
-    /// @dev Resolves diamond inheritance conflict between ERC20 and ERC20Pausable
+    /// @dev Resolves diamond inheritance conflict. Tracks totalBurned for all
+    ///      burn paths — burns are _update calls where `to == address(0)`.
     function _update(
         address from,
         address to,
@@ -265,16 +266,10 @@ contract FORGE is ERC20, ERC20Burnable, ERC20Pausable, AccessControl, Reentrancy
         internal
         override(ERC20, ERC20Pausable)
     {
+        if (to == address(0)) {
+            totalBurned += value;
+        }
         super._update(from, to, value);
-    }
-
-    /**
-     * @dev Override burn to track totalBurned for ALL burn paths, including
-     *      direct ERC20Burnable.burn() calls by holders.
-     */
-    function _burn(address account, uint256 amount) internal override {
-        totalBurned += amount;
-        super._burn(account, amount);
     }
 
     // =========================================================================

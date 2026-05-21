@@ -1,0 +1,13 @@
+{
+  "network": "base-sepolia",
+  "address": "0xE7838155ff832DE0bA0AB2647E361eE6796bAAb4",
+  "deployer": "0x4C5849C1d6fe81D412e0c8f2723f150f43Af65F7",
+  "architect": "0x4e4fEf67F25351035f9096e615a92e8959464BB5",
+  "treasury": "0x4e4fEf67F25351035f9096e615a92e8959464BB5",
+  "txHash": "0x20ca23df28fa52b2ae52359c9cf3594c459b14a413b47c720e6e9308cefeee8f",
+  "blockNumber": 41819412,
+  "timestamp": "2026-05-21T23:45:10.334Z",
+  "maxSupply": "21000000",
+  "symbol": "FRG",
+  "note": "UTILITY TOKEN ONLY — legal sign-off required before public distribution — Jessica Lee Westerhoff CPA"
+}
