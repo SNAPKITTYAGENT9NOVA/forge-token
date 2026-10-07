@@ -100,3 +100,16 @@ See `FORGE_TOKENOMICS.md` for full specification.
 *CIPHER (Cryptographic Agent) — co-architecting with NOVA*
 *2026-05-21 | PENDING LEGAL REVIEW — NOT FOR PUBLIC DISTRIBUTION*
 
+---
+
+## License
+
+Licensed under **AGPL-3.0**. Full text: [LICENSE](LICENSE).
+
+Releases published before 2026-10-07 were licensed under MIT; copies obtained under those terms keep them.
+
+### 💼 Commercial License
+
+SnapKitty code is free and open under **AGPL-3.0** for open-source use. Building a commercial product or service? A **proprietary commercial license** from Snapkitty Collective LLC lets you ship this code without the AGPL's source-sharing and network-use obligations.
+
+**[→ Get a commercial license](mailto:A.parr@belespritdaccord.uk?subject=Commercial%20license:%20forge-token)** · A.parr@belespritdaccord.uk
